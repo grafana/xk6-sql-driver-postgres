@@ -36,32 +36,3 @@ export default function () {
 ## Usage
 
 Check the [xk6-sql documentation](https://github.com/grafana/xk6-sql) on how to use this database driver.
-
----
-
-> [!IMPORTANT]
->
-> ## TODO
->
-> This is a repository template for creating an xk6-sql driver repository.
->
-> After creating the driver repository, remember the following:
->
-> - replace `Postgres` with the database name in:
->   -  `README.md`
-> - replace `postgres` with the database driver name in:
->   - `README.md`
->   - `register.go`
->   - `register_test.go`
->   - `examples/example.js`
-> - update SQL statements to match the database's SQL dialect in:
->   -  `testdata/script.js`
->   -  `examples/example.js`
->   -  `README.md`
-> - change the go package and module name:
->   - `go.mod`
->   - `register.go`
->   - `register_test.go`
->   - `Makefile`
-> - remove this alert blockquote from `README.md`
-
