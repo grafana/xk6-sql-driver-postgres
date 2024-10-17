@@ -1,6 +1,6 @@
 const db = sql.open(driver, connection);
 
-db.exec("CREATE TABLE IF NOT EXISTS test_table (id integer PRIMARY KEY AUTOINCREMENT, name VARCHAR NOT NULL, value VARCHAR);");
+db.exec("CREATE TABLE test_table (id SERIAL PRIMARY KEY, name VARCHAR(50) NOT NULL, value VARCHAR(50));");
 
 for (let i = 0; i < 5; i++) {
   db.exec("INSERT INTO test_table (name, value) VALUES ('name-" + i + "', 'value-" + i + "');");
