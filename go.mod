@@ -3,7 +3,7 @@ module github.com/grafana/xk6-sql-driver-postgres
 go 1.22
 
 require (
-	github.com/grafana/xk6-sql v0.5.0-alpha.3
+	github.com/grafana/xk6-sql v0.5.0-alpha.4
 	github.com/lib/pq v1.10.9
 	github.com/stretchr/testify v1.9.0
 	github.com/testcontainers/testcontainers-go v0.33.0
