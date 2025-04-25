@@ -1,22 +1,21 @@
 import sql from "k6/x/sql";
 import driver from "k6/x/sql/driver/postgres";
 
-// The second argument is a PostgreSQL connection string, e.g.
-// postgres://myuser:mypass@127.0.0.1:5432/postgres?sslmode=disable
-const db = sql.open(driver, "");
+const db = sql.open(driver, "postgres://myuser:mypassword@127.0.0.1:5432/mydb?sslmode=disable");
 
 export function setup() {
   db.exec(`
-    CREATE TABLE IF NOT EXISTS keyvalues
+    CREATE TABLE IF NOT EXISTS roster
       (
         id SERIAL PRIMARY KEY,
-        key VARCHAR(50) NOT NULL,
-        value VARCHAR(50)
+        given_name VARCHAR(50) NOT NULL,
+        family_name VARCHAR(50) NOT NULL
       );
   `);
 }
 
 export function teardown() {
+  db.exec("DROP TABLE IF EXISTS roster;");
   db.close();
 }
 
