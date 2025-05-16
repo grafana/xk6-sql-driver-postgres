@@ -6,7 +6,6 @@ metadata:
   description: |
     xk6-sql driver extension for Postgres database support
   annotations:
-    backstage.io/techdocs-ref: dir:.
     github.com/project-slug: grafana/xk6-sql-driver-postgres
 spec:
   type: library
