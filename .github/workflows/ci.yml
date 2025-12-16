@@ -24,7 +24,7 @@ jobs:
           go-version: 1.22.x
           cache: false
       - name: Setup xk6
-        uses: grafana/setup-xk6@1b678f776a14cf360de8791bd778f9dd49d8e2e4 # v1.0.0
+        uses: grafana/setup-xk6@97b842b765bd3fea56db7195e98c5f61cab8fe46 # v1.1.1
         with:
           xk6-version: "0.19.2"
       - name: Build
