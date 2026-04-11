@@ -6,7 +6,7 @@ toolchain go1.26.1
 
 require (
 	github.com/grafana/xk6-sql v1.0.6
-	github.com/lib/pq v1.12.1
+	github.com/lib/pq v1.12.3
 	github.com/stretchr/testify v1.11.1
 	github.com/testcontainers/testcontainers-go v0.40.0
 	github.com/testcontainers/testcontainers-go/modules/postgres v0.40.0
