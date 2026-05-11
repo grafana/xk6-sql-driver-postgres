@@ -2,7 +2,7 @@ module github.com/grafana/xk6-sql-driver-postgres
 
 go 1.25.0
 
-toolchain go1.26.3
+toolchain go1.25.10
 
 require (
 	github.com/grafana/xk6-sql v1.1.0
