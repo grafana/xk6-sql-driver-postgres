@@ -5,7 +5,7 @@ go 1.25.0
 toolchain go1.25.12
 
 require (
-	github.com/grafana/xk6-sql v1.2.0
+	github.com/grafana/xk6-sql v1.2.1
 	github.com/lib/pq v1.12.3
 	github.com/stretchr/testify v1.11.1
 	github.com/testcontainers/testcontainers-go v0.43.0
